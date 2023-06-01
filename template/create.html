@@ -1,0 +1,18 @@
+{% include 'base.html'%}
+{%block content%}
+<div class="container">
+
+
+<div class="col-md-6 offset-md-3">
+    <h1> ADD RECORD PAGE </h1>
+<br>
+<form action="{% url 'create'%}" method="post">
+    {% csrf_token%}
+{{data.as_p}}
+    <input type="submit" class="btn btn-success" value="ADD RECORD">
+</div>
+</form>
+
+</div>
+</div>
+{% endblock content%}
