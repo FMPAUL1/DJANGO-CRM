@@ -8,7 +8,7 @@ class Record(models.Model):
     address=models.CharField(max_length=200)
     state=models.CharField(max_length=200)
     email=models.EmailField()
-    phone=models.IntegerField()
+    phone=models.BigIntegerField()
     zipcode=models.IntegerField()
     
     def __str__(self):
